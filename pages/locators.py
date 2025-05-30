@@ -5,8 +5,8 @@ class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 class LoginPageLocators():
-    should_be_login = ("xpath", "(//h2)[1]")
-    should_be_register = ("xpath", "(//h2)[2]")
+    should_be_login_form = ("xpath", "(//h2)[1]")
+    should_be_register_form = ("xpath", "(//h2)[2]")
 
 class ProductPageLocators(object):
     BUTTON_ADD_TO_BASKET = (By.CSS_SELECTOR, "button.btn-add-to-basket")
