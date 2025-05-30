@@ -5,8 +5,13 @@ class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 class LoginPageLocators():
-    should_be_login_form = ("xpath", "(//h2)[1]")
-    should_be_register_form = ("xpath", "(//h2)[2]")
+    SHOULD_BE_LOGIN_FORM = ("xpath", "(//h2)[1]")
+    SHOULD_BE_REGISTER_FORM = ("xpath", "(//h2)[2]")
+    THE_USER_IS_REGISTERED= ("xpath", "//i[@class='icon-user']")
+    REG_FIELD_INPUT_EMAIL = ("xpath", "//input[@id='id_registration-email']")
+    REG_FIELD_INPUT_PASSWORD = ("xpath", "//input[@id='id_registration-password1']")
+    REG_FIELD_INPUT_PASSWORD_RETRY = ("xpath", "//input[@id='id_registration-password2']")
+    REG_BUTTON = ("xpath", "//button[@name='registration_submit']")
 
 class ProductPageLocators(object):
     BUTTON_ADD_TO_BASKET = (By.CSS_SELECTOR, "button.btn-add-to-basket")
@@ -18,6 +23,7 @@ class ProductPageLocators(object):
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
     VIEW_CART = ("xpath", "//a[@class='btn btn-default']")
