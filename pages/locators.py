@@ -18,3 +18,8 @@ class ProductPageLocators(object):
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+class BasketPageLocators():
+    VIEW_CART = ("xpath", "//a[@class='btn btn-default']")
+    EMPTY_CART = ("xpath", "//div[@id='content_inner']/p")
+    PRODUCT_IS_IN_THE_CART= ("xpath", "//h2[@class='col-sm-6 h3']")
